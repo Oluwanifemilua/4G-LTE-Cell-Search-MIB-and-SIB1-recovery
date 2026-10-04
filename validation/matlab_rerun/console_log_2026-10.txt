@@ -1,0 +1,133 @@
+MATLAB console output: SIB1RecoveryExample_wCoarseFr on B28LTEcapture.bb
+Rerun of the 2022 receiver, unchanged, October 2026. The script was run twice;
+both runs printed identical output. One run is reproduced below.
+
+>> SIB1RecoveryExample_wCoarseFr
+Warning: dsp.SpectrumAnalyzer will be removed in a future release. Use spectrumAnalyzer instead.
+> In dsp/SpectrumAnalyzer (line 18)
+In hSIB1RecoveryExamplePlots (line 15)
+In SIB1RecoveryExample_wCoarseFr (line 129)
+
+Plotting received signal spectrum...
+
+Resampling from 30.720Ms/s to 1.920Ms/s for cell search / MIB decoding...
+
+Performing cell search...
+Coarse frequency offset estimation
+coarseFreqOffset = 15000.0
+Timing offset to frame start: 5438 samples
+Cell-wide settings after cell search:
+NDLRB: 6
+DuplexMode: 'FDD'
+CyclicPrefix: 'Normal'
+NCellID: 63
+NSubframe: 0
+
+Performing frequency offset estimation...
+Frequency offset: -1788.026Hz
+Performing OFDM demodulation...
+Performing MIB decoding...
+Cell-wide settings after MIB decoding:
+NDLRB: 50
+DuplexMode: 'FDD'
+CyclicPrefix: 'Normal'
+NCellID: 63
+NSubframe: 0
+CellRefP: 2
+PHICHDuration: 'Normal'
+Ng: 'One'
+NFrame: 425
+
+Restarting reception now that bandwidth (NDLRB=50) is known...
+
+Resampling from 30.720Ms/s to 15.360Ms/s...
+
+Performing frequency offset estimation...
+Frequency offset: -1795.595Hz
+
+Performing timing offset estimation...
+Timing offset to frame start: 43503 samples
+
+Performing OFDM demodulation...
+Skipping frame 425 (odd frame number does not contain SIB1).
+
+--------------------------------------------------
+SIB1 decoding for frame 426
+--------------------------------------------------
+Decoding CFI...
+Decoded CFI value: 2
+PDCCH search for SI-RNTI...
+DCI message with SI-RNTI:
+DCIFormat: 'Format1A'
+CIF: 0
+AllocationType: 0
+Allocation: [1x1 struct]
+ModCoding: 2
+HARQNo: 0
+NewData: 0
+RV: 2
+TPCPUCCH: 1
+TDDIndex: 0
+SRSRequest: 0
+HARQACKResOffset: 0
+PDSCH settings after DCI decoding:
+RNTI: 65535
+PRBSet: [6x1 uint64]
+NLayers: 2
+CSI: 'On'
+Modulation: {'QPSK'}
+RV: 2
+TxScheme: 'TxDiversity'
+NTurboDecIts: 5
+
+Decoding SIB1...
+PDSCH RMS EVM: 53.715%
+PDSCH Peak EVM: 163.297%
+
+SIB1 CRC: 0
+Successful SIB1 recovery.
+--------------------------------------------------
+SIB1 decoding for frame 428
+--------------------------------------------------
+Decoding CFI...
+Decoded CFI value: 2
+PDCCH search for SI-RNTI...
+DCI message with SI-RNTI:
+DCIFormat: 'Format1A'
+CIF: 0
+AllocationType: 0
+Allocation: [1x1 struct]
+ModCoding: 2
+HARQNo: 0
+NewData: 0
+RV: 3
+TPCPUCCH: 1
+TDDIndex: 0
+SRSRequest: 0
+HARQACKResOffset: 0
+PDSCH settings after DCI decoding:
+RNTI: 65535
+PRBSet: [6x1 uint64]
+NLayers: 2
+CSI: 'On'
+Modulation: {'QPSK'}
+RV: 3
+TxScheme: 'TxDiversity'
+NTurboDecIts: 5
+
+Decoding SIB1...
+Recombining with previous transmission.
+PDSCH RMS EVM: 49.629%
+PDSCH Peak EVM: 140.589%
+
+SIB1 CRC: 0
+Successful SIB1 recovery.
+
+>> sprintf('%02x', bi2de(reshape(double(sib1{1}), 8, []).', 'left-msb'))
+
+ans =
+
+    '405884615828565ae0a821b0908104596000'
+
+(SIB1 bits recovered by MATLAB for SFN 428, as hex. Byte-identical to the
+srsRAN decode in ../expected/sib1_decoded.txt.)
