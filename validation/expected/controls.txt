@@ -1,0 +1,3 @@
+ports=1 PCI=63: no MIB (expected)
+ports=4 PCI=63: no MIB (expected)
+ports=2 PCI=64: no MIB (expected)

@@ -1,0 +1,94 @@
+{
+  "capture": {
+    "CaptureLengthSamples": 1228800.0,
+    "CaptureLengthSeconds": 0.04,
+    "BasebandSampleRate": 30720000.0,
+    "CenterFrequency": 773000000.0,
+    "Date": "25-Aug-2022 12:16:25",
+    "HeaderBytes": 2105
+  },
+  "cfo_hz": 13700.0,
+  "cfo_ppm": 17.72,
+  "nid2": 0,
+  "nid1": 21,
+  "pci": 63,
+  "sss_votes": "7/8",
+  "pss_spacing_samples": [
+    9600,
+    9600,
+    9599,
+    9600,
+    9600,
+    9600,
+    9600
+  ],
+  "weak_corr_threshold": 0.642,
+  "frame_start_15p36": 43504,
+  "frame_start_ms": 2.832,
+  "peaks": [
+    {
+      "sample_1p92": 6270,
+      "ms": 3.266,
+      "nid1": 21,
+      "subframe": 0,
+      "margin": 1.97,
+      "corr_norm": 0.926
+    },
+    {
+      "sample_1p92": 15870,
+      "ms": 8.266,
+      "nid1": 21,
+      "subframe": 5,
+      "margin": 1.83,
+      "corr_norm": 0.897
+    },
+    {
+      "sample_1p92": 25470,
+      "ms": 13.266,
+      "nid1": 21,
+      "subframe": 0,
+      "margin": 1.72,
+      "corr_norm": 0.728
+    },
+    {
+      "sample_1p92": 35069,
+      "ms": 18.265,
+      "nid1": 21,
+      "subframe": 5,
+      "margin": 1.94,
+      "corr_norm": 1.0
+    },
+    {
+      "sample_1p92": 44669,
+      "ms": 23.265,
+      "nid1": 21,
+      "subframe": 0,
+      "margin": 1.89,
+      "corr_norm": 0.786
+    },
+    {
+      "sample_1p92": 54269,
+      "ms": 28.265,
+      "nid1": 21,
+      "subframe": 5,
+      "margin": 1.95,
+      "corr_norm": 0.948
+    },
+    {
+      "sample_1p92": 63869,
+      "ms": 33.265,
+      "nid1": 21,
+      "subframe": 0,
+      "margin": 1.89,
+      "corr_norm": 0.902
+    },
+    {
+      "sample_1p92": 73469,
+      "ms": 38.265,
+      "nid1": 165,
+      "subframe": 5,
+      "margin": 1.0,
+      "corr_norm": 0.748
+    }
+  ]
+}

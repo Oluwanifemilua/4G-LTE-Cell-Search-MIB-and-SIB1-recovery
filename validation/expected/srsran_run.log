@@ -1,0 +1,183 @@
+[INFO]: Offseting input file by 43500 samples and 13.7 kHz
+[INFO]: Init PDCCH: Max bits: 3600
+[INFO]: Init PDSCH: 50 PRBs, max_symbols: 8400
+[INFO]: Init PMCH: 50 PRBs, max_symbols: 7200
+[INFO]: Indexing 400 REGs. CellId: 63, 50 PRB, CP: Normal
+[INFO]: PCFICH allocating 4 regs. CellID: 63, PRB: 50
+[INFO]: Creating 7 PHICH mapping units. Normal length, Ng=1.00
+[INFO]: Init PDCCH REG space CFI 1. 72 useful REGs (8 CCEs)
+[INFO]: Init PDCCH REG space CFI 2. 225 useful REGs (25 CCEs)
+[INFO]: Init PDCCH REG space CFI 3. 369 useful REGs (41 CCEs)
+[INFO]: PDCCH: Cell config PCI=0, 0 ports.
+[INFO]: PDSCH: Cell config PCI=63, 2 ports, 50 PRBs, max_symbols: 8400
+[INFO]: PMCH: Cell config PCI=2, 63 ports, 50 PRBs, max_symbols: 7200
+[INFO]: 
+Entering main loop...
+[INFO]: Reading 15360 samples. sf_idx = 0
+[INFO]: Decoded PBCH: src=0, dst=1, nb=1, sfn_offset=1
+[INFO]: MIB decoded: 0, snr=9.8 dB
+ - Type:            FDD
+ - PCI:             63
+ - Nof ports:       2
+ - CP:              Normal  
+ - PRB:             50
+ - PHICH Length:    Normal
+ - PHICH Resources: 1
+ - SFN:             424
+Decoded MIB. SFN: 424, offset: 1
+[INFO]: Reading 15360 samples. sf_idx = 1
+[INFO]: Reading 15360 samples. sf_idx = 2
+[INFO]: Reading 15360 samples. sf_idx = 3
+[INFO]: Reading 15360 samples. sf_idx = 4
+[INFO]: Reading 15360 samples. sf_idx = 5
+[K          CFO:   +0.00 Hz
+[K         RSRP:  +0.0 dBm |  +0.0 dBm
+[K          SNR:  +0.0 dB
+[K           TM: 1
+[K           Rb:   0.00 /   0.00 /   0.00 Mbps (net/maximum/processing)
+[K   PDCCH-Miss:  -nan%
+[K   PDSCH-BLER:  -nan%
+[K   PDSCH-EVM:  0.00%
+[K         TB 0: mcs=0; tbs=0
+[K         TB 1: mcs=0; tbs=0
+[Ksync_err[0][0]=0.000000
+[Ksync_err[1][0]=0.000000
+[KPress enter maximum printing debug log of 1 subframe.
+[K
+[14A[INFO]: Reading 15360 samples. sf_idx = 6
+[INFO]: Reading 15360 samples. sf_idx = 7
+[INFO]: Reading 15360 samples. sf_idx = 8
+[INFO]: Reading 15360 samples. sf_idx = 9
+[INFO]: Reading 15360 samples. sf_idx = 0
+[INFO]: Reading 15360 samples. sf_idx = 1
+[INFO]: Reading 15360 samples. sf_idx = 2
+[INFO]: Reading 15360 samples. sf_idx = 3
+[INFO]: Reading 15360 samples. sf_idx = 4
+[INFO]: Reading 15360 samples. sf_idx = 5
+[INFO]: Setting PHICH mi value auto. sf_idx=5, mi=1, idx=0
+[INFO]: Decoded CFI=2 with correlation 27.39, sf_idx=5
+[INFO]: Setting PHICH mi value auto. sf_idx=5, mi=1, idx=0
+[INFO]: Initiated 6 candidate(s) in the Common search space
+[INFO]: Searching 2 formats in 6 locations in common SS, csi=0
+[INFO]: Searching format Format1A in 0,2 (0/6)
+[INFO]: Decoded DCI: nCCE=0, L=2, format=Format1A, msg_len=27, mean=1.424009, crc_rem=0xffff
+[INFO]: Searching format Format1A in 4,2 (1/6)
+[INFO]: Decoded DCI: nCCE=4, L=2, format=Format0 , msg_len=27, mean=0.631921, crc_rem=0x17df
+[INFO]: Searching format Format1C in 4,2 (1/6)
+[INFO]: Decoded DCI: nCCE=4, L=2, format=Format1C, msg_len=13, mean=0.631921, crc_rem=0xf16d
+[INFO]: Searching format Format1A in 8,2 (2/6)
+[INFO]: Decoded DCI: nCCE=8, L=2, format=Format1A, msg_len=27, mean=0.302980, crc_rem=0xaa33
+[INFO]: Searching format Format1C in 8,2 (2/6)
+[INFO]: Decoded DCI: nCCE=8, L=2, format=Format1C, msg_len=13, mean=0.302980, crc_rem=0x49be
+[INFO]: Searching format Format1A in 12,2 (3/6)
+[INFO]: Decoded DCI: nCCE=12, L=2, format=Format1A, msg_len=27, mean=0.364604, crc_rem=0xac74
+[INFO]: Searching format Format1C in 12,2 (3/6)
+[INFO]: Decoded DCI: nCCE=12, L=2, format=Format1C, msg_len=13, mean=0.364604, crc_rem=0x9ba2
+[INFO]: Skipping location L=3, ncce=0. Already allocated
+[INFO]: Searching format Format1A in 8,3 (5/6)
+[INFO]: Decoded DCI: nCCE=8, L=3, format=Format1A, msg_len=27, mean=0.333792, crc_rem=0xdb1b
+[INFO]: Searching format Format1C in 8,3 (5/6)
+[INFO]: Decoded DCI: nCCE=8, L=3, format=Format1C, msg_len=13, mean=0.333792, crc_rem=0xc267
+[INFO]: PDCCH: f=1A, cce= 0, L=2, riv=250, pid=0, mcs={2}, ndi={0}, tpc_pucch=0, snr=9.9 dB
+[INFO]: Decoding PDSCH SF: 5, RNTI: 0xffff, NofSymbols: 792, C_prb=6, mod=QPSK, nof_layers=2, nof_tb=1
+[INFO]: Decoding PDSCH SF: 5 (CW0 -> TB0), Mod QPSK, NofBits: 144, NofSymbols: 792, NofBiSIBDUMP sfn=426 sf=5 tbs=144 hex=405884615828565ae0a821b0908104596000
+SIBDUMP sfn=428 sf=5 tbs=144 hex=405884615828565ae0a821b0908104596000
+tsE: 1584, rv_idx: 2
+[INFO]: CB Segmentation: TBS: 144, C=1, C+=1 K+=168, C-=0, K-=0, F=0, Bp=168
+[INFO]: CB 0: rp=0, n_e=1584, cb_len=168, CRC=OK, rlen=168, iterations=2/10
+[INFO]: TB decoded OK
+[K          CFO:   +0.00 Hz
+[K         RSRP:  +2.3 dBm |  +2.7 dBm
+[K          SNR:  +0.5 dB
+[K           TM: 2
+[K           Rb:   0.00 /   0.01 /   0.00 Mbps (net/maximum/processing)
+[K   PDCCH-Miss:  0.00%
+[K   PDSCH-BLER:  0.00%
+[K   PDSCH-EVM:  0.06%
+[K         TB 0: mcs=2; tbs=144
+[K         TB 1: mcs=0; tbs=0
+[Ksync_err[0][0]=0.001605
+[Ksync_err[1][0]=0.000000
+[KPress enter maximum printing debug log of 1 subframe.
+[K
+[14A[INFO]: Reading 15360 samples. sf_idx = 6
+[INFO]: Reading 15360 samples. sf_idx = 7
+[INFO]: Reading 15360 samples. sf_idx = 8
+[INFO]: Reading 15360 samples. sf_idx = 9
+[INFO]: Reading 15360 samples. sf_idx = 0
+[INFO]: Reading 15360 samples. sf_idx = 1
+[INFO]: Reading 15360 samples. sf_idx = 2
+[INFO]: Reading 15360 samples. sf_idx = 3
+[INFO]: Reading 15360 samples. sf_idx = 4
+[INFO]: Reading 15360 samples. sf_idx = 5
+[K          CFO:   +0.00 Hz
+[K         RSRP:  +2.3 dBm |  +2.7 dBm
+[K          SNR:  +0.5 dB
+[K           TM: 2
+[K           Rb:   0.00 /   0.01 /   0.00 Mbps (net/maximum/processing)
+[K   PDCCH-Miss:  0.00%
+[K   PDSCH-BLER:  0.00%
+[K   PDSCH-EVM:  0.06%
+[K         TB 0: mcs=2; tbs=144
+[K         TB 1: mcs=0; tbs=0
+[Ksync_err[0][0]=0.001605
+[Ksync_err[1][0]=0.000000
+[KPress enter maximum printing debug log of 1 subframe.
+[K
+[14A[INFO]: Reading 15360 samples. sf_idx = 6
+[INFO]: Reading 15360 samples. sf_idx = 7
+[INFO]: Reading 15360 samples. sf_idx = 8
+[INFO]: Reading 15360 samples. sf_idx = 9
+[INFO]: Reading 15360 samples. sf_idx = 0
+[INFO]: Reading 15360 samples. sf_idx = 1
+[INFO]: Reading 15360 samples. sf_idx = 2
+[INFO]: Reading 15360 samples. sf_idx = 3
+[INFO]: Reading 15360 samples. sf_idx = 4
+[INFO]: Reading 15360 samples. sf_idx = 5
+[INFO]: Setting PHICH mi value auto. sf_idx=5, mi=1, idx=0
+[INFO]: Decoded CFI=2 with correlation 28.68, sf_idx=5
+[INFO]: Setting PHICH mi value auto. sf_idx=5, mi=1, idx=0
+[INFO]: Initiated 6 candidate(s) in the Common search space
+[INFO]: Searching 2 formats in 6 locations in common SS, csi=0
+[INFO]: Searching format Format1A in 0,2 (0/6)
+[INFO]: Decoded DCI: nCCE=0, L=2, format=Format1A, msg_len=27, mean=1.483352, crc_rem=0xffff
+[INFO]: Searching format Format1A in 4,2 (1/6)
+[INFO]: Decoded DCI: nCCE=4, L=2, format=Format1A, msg_len=27, mean=1.049267, crc_rem=0x409d
+[INFO]: Searching format Format1C in 4,2 (1/6)
+[INFO]: Decoded DCI: nCCE=4, L=2, format=Format1C, msg_len=13, mean=1.049267, crc_rem=0xe9cf
+[INFO]: Searching format Format1A in 8,2 (2/6)
+[INFO]: Decoded DCI: nCCE=8, L=2, format=Format1A, msg_len=27, mean=1.001112, crc_rem=0x5ce4
+[INFO]: Searching format Format1C in 8,2 (2/6)
+[INFO]: Decoded DCI: nCCE=8, L=2, format=Format1C, msg_len=13, mean=1.001112, crc_rem=0x7dbc
+[INFO]: Searching format Format1A in 12,2 (3/6)
+[INFO]: Decoded DCI: nCCE=12, L=2, format=Format0 , msg_len=27, mean=1.014449, crc_rem=0x1d88
+[INFO]: Searching format Format1C in 12,2 (3/6)
+[INFO]: Decoded DCI: nCCE=12, L=2, format=Format1C, msg_len=13, mean=1.014449, crc_rem=0x6b81
+[INFO]: Skipping location L=3, ncce=0. Already allocated
+[INFO]: Searching format Format1A in 8,3 (5/6)
+[INFO]: Decoded DCI: nCCE=8, L=3, format=Format0 , msg_len=27, mean=1.007781, crc_rem=0x8714
+[INFO]: Searching format Format1C in 8,3 (5/6)
+[INFO]: Decoded DCI: nCCE=8, L=3, format=Format1C, msg_len=13, mean=1.007781, crc_rem=0x9223
+[INFO]: PDCCH: f=1A, cce= 0, L=2, riv=250, pid=0, mcs={2}, ndi={0}, tpc_pucch=0, snr=10.3 dB
+[INFO]: Decoding PDSCH SF: 5, RNTI: 0xffff, NofSymbols: 792, C_prb=6, mod=QPSK, nof_layers=2, nof_tb=1
+[INFO]: Decoding PDSCH SF: 5 (CW0 -> TB0), Mod QPSK, NofBits: 144, NofSymbols: 792, NofBitsE: 1584, rv_idx: 3
+[INFO]: CB Segmentation: TBS: 144, C=1, C+=1 K+=168, C-=0, K-=0, F=0, Bp=168
+[INFO]: CB 0: rp=0, n_e=1584, cb_len=168, CRC=OK, rlen=168, iterations=2/10
+[INFO]: TB decoded OK
+[K          CFO:   +0.00 Hz
+[K         RSRP:  +4.4 dBm |  +5.3 dBm
+[K          SNR:  +1.0 dB
+[K           TM: 2
+[K           Rb:   0.00 /   0.01 /   0.01 Mbps (net/maximum/processing)
+[K   PDCCH-Miss:  0.00%
+[K   PDSCH-BLER:  0.00%
+[K   PDSCH-EVM:  0.11%
+[K         TB 0: mcs=2; tbs=144
+[K         TB 1: mcs=0; tbs=0
+[Ksync_err[0][0]=-0.005791
+[Ksync_err[1][0]=0.000000
+[KPress enter maximum printing debug log of 1 subframe.
+[K
+[14A[INFO]: Reading 15360 samples. sf_idx = 6
+
+Bye

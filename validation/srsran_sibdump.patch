@@ -1,0 +1,16 @@
+diff --git a/lib/examples/pdsch_ue.c b/lib/examples/pdsch_ue.c
+index 0e8d3a2..45f77cc 100644
+--- a/lib/examples/pdsch_ue.c
++++ b/lib/examples/pdsch_ue.c
+@@ -827,6 +827,11 @@ int main(int argc, char** argv)
+             gettimeofday(&t[2], NULL);
+             get_time_interval(t);
+ 
++            if (n > 0 && acks[0]) {
++              fprintf(stderr, "SIBDUMP sfn=%d sf=%d tbs=%d hex=", sfn, sf_idx, pdsch_cfg.grant.tb[0].tbs);
++              for (uint32_t b = 0; b < pdsch_cfg.grant.tb[0].tbs / 8; b++) fprintf(stderr, "%02x", data[0][b]);
++              fprintf(stderr, "\n");
++            }
+             if (n > 0) {
+               /* Send data if socket active */
+               if (prog_args.net_port > 0) {

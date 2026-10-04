@@ -1,0 +1,58 @@
+SFN 426 subframe 5: TBS 144 bits, CRC pass, 405884615828565ae0a821b0908104596000
+SFN 428 subframe 5: TBS 144 bits, CRC pass, 405884615828565ae0a821b0908104596000
+Identical copies: yes (2 decoded)
+
+{
+  message c1 : systemInformationBlockType1 : {
+    cellAccessRelatedInfo {
+      plmn-IdentityList {
+        {
+          plmn-Identity {
+            mcc {
+              6,
+              2,
+              1
+            },
+            mnc {
+              3,
+              0
+            }
+          },
+          cellReservedForOperatorUse notReserved
+        }
+      },
+      trackingAreaCode '5828'H -- X( --,
+      cellIdentity '565AE0A'H,
+      cellBarred notBarred,
+      intraFreqReselection allowed,
+      csg-Indication FALSE
+    },
+    cellSelectionInfo {
+      q-RxLevMin -62
+    },
+    freqBandIndicator 28,
+    schedulingInfoList {
+      {
+        si-Periodicity rf16,
+        sib-MappingInfo {
+          sibType3
+        }
+      },
+      {
+        si-Periodicity rf32,
+        sib-MappingInfo {
+          sibType5
+        }
+      }
+    },
+    si-WindowLength ms40,
+    systemInfoValueTag 11
+  }
+}
+
+Derived:
+  PLMN           621-30
+  TAC            0x5828 (22568)
+  ECI            0x565AE0A -> eNB ID 353710, cell 10
+  q-RxLevMin     -62 -> -124 dBm
+  Band           28
