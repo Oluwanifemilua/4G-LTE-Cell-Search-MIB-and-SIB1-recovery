@@ -43,6 +43,7 @@ The Pluto's oscillator error exceeds the +/-7.5 kHz range of the cyclic-prefix f
 | `PSSpeak.m`, `hPDSCHConfiguration.m`, `hPlotPositions.m`, `hSIB1RecoveryExamplePlots.m` | Helper functions |
 | `B28LTEcapture.bb` | The Band 28 capture |
 | `eNodeBOutput.mat` | 15.36 Msps example capture from the original MathWorks example |
+| `docs/Technical-Report.pdf` | Technical report |
 | `validation/` | Independent decode of the same capture; see [validation/README.md](validation/README.md) |
 | `validation/matlab_rerun/` | Console log and figures from the October 2026 rerun of the MATLAB receiver |
 
