@@ -49,10 +49,12 @@
 % MATLAB(R) can be used to acquire I/Q data from a wide range of
 % instruments using the Instrument Control Toolbox(TM). In this example a
 % single antenna I/Q capture of an eNodeB with two transmit antennas is
-% used. The capture is performed at 15.36 Msamples/s which is sufficient to
-% correctly sample all valid eNodeB bandwidths up to 10 MHz: 1.4 MHz, 3
-% MHz, 5 MHz, 10 MHz. The captured data is stored in the file
-% eNodeBOutput.mat.
+% used. The capture was recorded over the air with an ADALM-Pluto tuned to
+% 773 MHz (LTE Band 28 downlink) at 30.72 Msamples/s, 40 ms long
+% (1,228,800 samples). That rate is sufficient to correctly sample all
+% valid eNodeB bandwidths up to 20 MHz: 1.4 MHz, 3 MHz, 5 MHz, 10 MHz,
+% 15 MHz, 20 MHz. The captured data is stored in the file
+% B28LTEcapture.bb.
 %
 % Alternatively, a suitable LTE signal can be generated using the
 % LTE Toolbox. This can be controlled by the variable |loadFromFile|.
@@ -78,6 +80,7 @@ loadFromFile = 1; % Set to 0 to generate the eNodeB output locally
 % conditions are such that all RVs need to be combined. 
 
 if loadFromFile
+%     % Alternative: 15.36 Msamples/s capture in eNodeBOutput.mat
 %     load eNodeBOutput.mat           % Load I/Q capture of eNodeB output
 %     eNodeBOutput = double(eNodeBOutput)/32768; % Scale samples
 %     sr = 15.36e6;                   % Sampling rate for loaded samples
@@ -274,6 +277,9 @@ fprintf('Cell-wide settings after cell search:\n');
 disp(enb);
 
 %%
+% PSS/SSS correlation for the Band 28 capture at 1.92 Msamples/s. The
+% strong peaks mark subframe 0 of PCI 63; the blue line is the
+% weak-correlation threshold.
 %
 % <<../CellSearch_MIB_SIB_PSS_SSS_Correlation.png>>
 
